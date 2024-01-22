@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    @apply max-w-6xl m-auto;
+  }
+  h1 {
+    @apply text-[52px] font-display tracking-wide;
+  }
+  h2 {
+    @apply text-[40px];
+  }
+  h3 {
+    @apply text-[32px];
+  }
+  h4 {
+    @apply text-[20px];
+  }
+}
+
+@layer components {
+  .head-nav {
+    @apply active:bg-white hover:bg-white hover:text-black font-medium px-3 py-2 rounded-full font-display text-lg;
+  }
+  .devider {
+    @apply border-t-2 border-slate-200;
+  }
+}
